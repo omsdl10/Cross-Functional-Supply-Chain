@@ -8,15 +8,14 @@ Manufacturing CFOs need AI that creates operational capacity and responsiveness,
 
 ## Current Stage
 
-Stage 2 adds a mock supply chain operating model:
+Stage 3 adds retrieval over supplier contracts with ChromaDB:
 
-- Supplier master data
-- Material master data
-- Inventory positions
-- Purchase orders
-- Shipment statuses
-- Risk events
-- Supplier contract summaries for future retrieval
+- Supplier contract text samples
+- Contract chunking
+- Local deterministic embeddings
+- Persistent ChromaDB collection
+- Retrieval API endpoints
+- Retrieval tests
 
 ## Stage 1 Scope
 
@@ -75,6 +74,22 @@ SUP-102 shipment SHIP-8821 is delayed by 7 days.
 The shipment affects MAT-445 Lithium Battery Cells.
 Current stock covers 4 days of production at 300 units per day.
 This creates the first high-impact scenario for the Stage 5-7 agents.
+```
+
+## Retrieval
+
+Stage 3 indexes supplier contracts into ChromaDB.
+
+Ingest contracts:
+
+```txt
+POST http://localhost:8000/retrieval/contracts/ingest
+```
+
+Query contracts:
+
+```txt
+GET http://localhost:8000/retrieval/contracts/query?q=inventory cover below 5 days
 ```
 
 ## Local Setup

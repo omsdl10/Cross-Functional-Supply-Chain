@@ -1,13 +1,17 @@
 from fastapi import FastAPI
 
+from app.api.retrieval import router as retrieval_router
+
 APP_NAME = "cross-functional-supply-chain-concierge"
-APP_STAGE = "stage-1-foundation"
+APP_STAGE = "stage-3-retrieval"
 
 app = FastAPI(
     title="Cross-Functional Supply Chain Concierge",
     description="Autonomous supplier risk and inventory orchestration system.",
     version="0.1.0",
 )
+
+app.include_router(retrieval_router)
 
 
 @app.get("/health", tags=["system"])

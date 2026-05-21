@@ -1,0 +1,11 @@
+Supplier Agreement: Nordic Alloy Works
+Supplier ID: SUP-314
+Primary Material: MAT-220 Aluminum Housing
+
+Nordic Alloy Works is the primary supplier for aluminum housing components. Standard lead time is 9 calendar days. The supplier maintains a monthly capacity reservation for Plant-Detroit-01.
+
+Delay Clause:
+The supplier must provide notice for delays expected to exceed 3 calendar days. If delay risk is caused by carrier disruption, Nordic Alloy Works must propose an alternate carrier within two business days.
+
+Continuity Clause:
+The buyer may request partial shipments when available inventory is below reorder point.

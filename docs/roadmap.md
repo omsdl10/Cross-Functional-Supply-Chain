@@ -23,6 +23,7 @@
 - Text chunking
 - Embedding storage
 - Contract query endpoint
+- Tests for contract ingestion and retrieval
 
 ## Stage 4: Operational Tool Layer
 

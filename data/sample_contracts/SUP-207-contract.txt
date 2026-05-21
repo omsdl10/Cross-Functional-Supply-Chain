@@ -1,0 +1,14 @@
+Supplier Agreement: Atlas Energy Materials
+Supplier ID: SUP-207
+Primary Material: MAT-445 Lithium Battery Cells
+
+Atlas Energy Materials is an approved secondary supplier for lithium battery cells. Standard lead time is 5 calendar days for expedited orders and 9 calendar days for regular orders. Expedited orders carry an expected 8 percent cost premium.
+
+Activation Clause:
+Atlas Energy Materials may be activated when the primary supplier misses a confirmed delivery date or when projected inventory cover drops below 5 days. Activation requires buyer approval and a revised purchase order.
+
+Capacity Clause:
+Atlas Energy Materials can support up to 1500 units within the expedited lead-time window, subject to quality release and logistics availability.
+
+Communication Clause:
+Supplier inquiries must include material ID, requested quantity, required delivery date, and reason for activation.

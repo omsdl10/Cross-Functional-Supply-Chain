@@ -1,0 +1,14 @@
+Supplier Agreement: Pacific Cell Components
+Supplier ID: SUP-102
+Primary Material: MAT-445 Lithium Battery Cells
+
+Pacific Cell Components is the primary supplier for lithium battery cells used by Plant-Detroit-01. Standard lead time is 12 calendar days from purchase order confirmation. The supplier must notify the buyer within 24 hours of any known logistics disruption.
+
+Delay Clause:
+If a shipment is delayed by more than 5 business days, Pacific Cell Components must provide a written recovery plan and may be subject to expedited freight cost sharing. Delays over 7 calendar days require escalation to the buyer's supply continuity team.
+
+Continuity Clause:
+The buyer may shift up to 40 percent of open demand to an approved secondary supplier if Pacific Cell Components cannot meet the confirmed delivery date. The supplier must share updated capacity availability within one business day of request.
+
+Quality Clause:
+All lithium battery cells must meet incoming quality inspection requirements before production release.
