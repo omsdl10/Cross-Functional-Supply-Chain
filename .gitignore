@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Environment
+.env
+
+# Local databases and vector stores
+*.sqlite3
+chroma/
+.chroma/
+
+# Node/frontend
+node_modules/
+dist/
+build/
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
