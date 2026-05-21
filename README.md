@@ -6,6 +6,18 @@ An autonomous AI workflow for manufacturing and logistics teams that monitors su
 
 Manufacturing CFOs need AI that creates operational capacity and responsiveness, not another passive chatbot. This project is designed as an operational supply chain concierge that connects supplier contracts, logistics risk signals, and inventory requirements into a decision-making workflow.
 
+## Current Stage
+
+Stage 2 adds a mock supply chain operating model:
+
+- Supplier master data
+- Material master data
+- Inventory positions
+- Purchase orders
+- Shipment statuses
+- Risk events
+- Supplier contract summaries for future retrieval
+
 ## Stage 1 Scope
 
 This first stage establishes the project foundation:
@@ -54,6 +66,17 @@ data/
 docs/
 ```
 
+## Mock Data
+
+Stage 2 includes a working demo scenario:
+
+```txt
+SUP-102 shipment SHIP-8821 is delayed by 7 days.
+The shipment affects MAT-445 Lithium Battery Cells.
+Current stock covers 4 days of production at 300 units per day.
+This creates the first high-impact scenario for the Stage 5-7 agents.
+```
+
 ## Local Setup
 
 ```bash
@@ -62,6 +85,12 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 uvicorn app.main:app --reload
+```
+
+Run tests from the repository root:
+
+```bash
+python -m pytest
 ```
 
 Health check:

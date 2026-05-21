@@ -1,0 +1,38 @@
+[
+  {
+    "po_id": "PO-9001",
+    "supplier_id": "SUP-102",
+    "material_id": "MAT-445",
+    "quantity": 3000,
+    "status": "in_transit",
+    "expected_delivery_date": "2026-05-26",
+    "unit_cost": 42.5
+  },
+  {
+    "po_id": "PO-9002",
+    "supplier_id": "SUP-314",
+    "material_id": "MAT-220",
+    "quantity": 5000,
+    "status": "confirmed",
+    "expected_delivery_date": "2026-05-30",
+    "unit_cost": 18.75
+  },
+  {
+    "po_id": "PO-9003",
+    "supplier_id": "SUP-422",
+    "material_id": "MAT-118",
+    "quantity": 12000,
+    "status": "confirmed",
+    "expected_delivery_date": "2026-05-24",
+    "unit_cost": 1.2
+  },
+  {
+    "po_id": "PO-9004",
+    "supplier_id": "SUP-518",
+    "material_id": "MAT-330",
+    "quantity": 1000,
+    "status": "in_transit",
+    "expected_delivery_date": "2026-05-28",
+    "unit_cost": 95.0
+  }
+]

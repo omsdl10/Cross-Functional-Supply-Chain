@@ -1,0 +1,5 @@
+material_id,current_stock,daily_usage,reorder_point,safety_stock,next_required_date
+MAT-445,1200,300,900,600,2026-05-25
+MAT-220,4200,350,1400,1000,2026-05-29
+MAT-118,8500,600,3000,1800,2026-05-24
+MAT-330,640,160,500,320,2026-05-27

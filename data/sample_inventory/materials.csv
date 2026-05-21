@@ -1,0 +1,5 @@
+material_id,name,category,criticality,unit
+MAT-445,Lithium Battery Cells,Energy Storage,high,units
+MAT-220,Aluminum Housing,Mechanical,medium,units
+MAT-118,Protective Packaging,Packaging,low,units
+MAT-330,Control Circuit Boards,Electronics,high,units

@@ -1,0 +1,22 @@
+[
+  {
+    "event_id": "RISK-1001",
+    "supplier_id": "SUP-102",
+    "material_id": "MAT-445",
+    "shipment_id": "SHIP-8821",
+    "risk_type": "shipping_delay",
+    "severity": "high",
+    "description": "Shipment delayed by 7 days at Shanghai Port.",
+    "detected_at": "2026-05-21T10:35:00+05:30"
+  },
+  {
+    "event_id": "RISK-1002",
+    "supplier_id": "SUP-518",
+    "material_id": "MAT-330",
+    "shipment_id": "SHIP-8823",
+    "risk_type": "port_congestion",
+    "severity": "medium",
+    "description": "Port congestion may delay control circuit board shipment by 3 days.",
+    "detected_at": "2026-05-21T11:05:00+05:30"
+  }
+]

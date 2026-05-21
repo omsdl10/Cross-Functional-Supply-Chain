@@ -1,0 +1,16 @@
+[
+  {
+    "document_id": "CONTRACT-SUP-102",
+    "supplier_id": "SUP-102",
+    "title": "Pacific Cell Components Supply Agreement",
+    "summary": "Primary lithium battery cell supplier with 12-day standard lead time, 5-day delay notification requirement, and penalties for delays above 5 business days.",
+    "future_retrieval_use": "Stage 3 will ingest full supplier contract text into ChromaDB."
+  },
+  {
+    "document_id": "CONTRACT-SUP-207",
+    "supplier_id": "SUP-207",
+    "title": "Atlas Energy Materials Secondary Supply Agreement",
+    "summary": "Approved secondary lithium battery cell supplier with 5-day expedited lead time and 8 percent expected cost premium.",
+    "future_retrieval_use": "Stage 3 will use this supplier as a mitigation option in retrieval-backed reasoning."
+  }
+]

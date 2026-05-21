@@ -1,0 +1,6 @@
+supplier_id,name,country,risk_rating,materials,standard_lead_time_days,is_primary
+SUP-102,Pacific Cell Components,China,medium,MAT-445,12,true
+SUP-207,Atlas Energy Materials,Vietnam,low,MAT-445,5,false
+SUP-314,Nordic Alloy Works,Sweden,low,MAT-220,9,true
+SUP-422,Delta Packaging Group,United States,medium,MAT-118,4,true
+SUP-518,Andes Circuit Systems,Chile,high,MAT-330,15,true

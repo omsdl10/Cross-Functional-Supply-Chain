@@ -15,6 +15,7 @@
 - Shipment dataset
 - Purchase order sample data
 - Data loading utilities
+- Tests for loading and querying mock data
 
 ## Stage 3: ChromaDB Supplier Retrieval
 

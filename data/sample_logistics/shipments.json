@@ -1,0 +1,41 @@
+[
+  {
+    "shipment_id": "SHIP-8821",
+    "po_id": "PO-9001",
+    "supplier_id": "SUP-102",
+    "material_id": "MAT-445",
+    "origin": "Shanghai Port",
+    "destination": "Plant-Detroit-01",
+    "status": "delayed",
+    "risk_type": "shipping_delay",
+    "delay_days": 7,
+    "severity": "high",
+    "last_updated": "2026-05-21T10:30:00+05:30"
+  },
+  {
+    "shipment_id": "SHIP-8822",
+    "po_id": "PO-9002",
+    "supplier_id": "SUP-314",
+    "material_id": "MAT-220",
+    "origin": "Gothenburg",
+    "destination": "Plant-Detroit-01",
+    "status": "on_schedule",
+    "risk_type": "none",
+    "delay_days": 0,
+    "severity": "none",
+    "last_updated": "2026-05-21T09:15:00+05:30"
+  },
+  {
+    "shipment_id": "SHIP-8823",
+    "po_id": "PO-9004",
+    "supplier_id": "SUP-518",
+    "material_id": "MAT-330",
+    "origin": "Valparaiso",
+    "destination": "Plant-Monterrey-02",
+    "status": "at_risk",
+    "risk_type": "port_congestion",
+    "delay_days": 3,
+    "severity": "medium",
+    "last_updated": "2026-05-21T11:00:00+05:30"
+  }
+]
