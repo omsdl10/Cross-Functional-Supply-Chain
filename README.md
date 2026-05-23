@@ -8,13 +8,13 @@ Manufacturing CFOs need AI that creates operational capacity and responsiveness,
 
 ## Current Stage
 
-Stage 6 adds an Impact Assessment Agent:
+Stage 7 adds a Strategy Agent:
 
-- Consumes monitor risk events
-- Calls inventory and supplier tools
-- Calculates days of cover versus delay days
-- Classifies production risk
-- Summarizes critical materials at risk
+- Consumes impact assessments
+- Generates mitigation options
+- Scores cost, lead time, and residual risk
+- Recommends the best strategy
+- Chains monitor, impact, and strategy in LangGraph
 
 ## Stage 1 Scope
 
@@ -150,6 +150,31 @@ Example impact output:
   "incoming_delay_days": 7,
   "projected_stockout_gap_days": 3.0,
   "production_risk": "high"
+}
+```
+
+## Strategy Agent
+
+Stage 7 proposes mitigation strategies for actionable risk events.
+
+Example endpoints:
+
+```txt
+GET http://localhost:8000/strategy/events/MON-SHIP-8821
+POST http://localhost:8000/strategy/run
+```
+
+Example strategy output:
+
+```json
+{
+  "material_id": "MAT-445",
+  "recommended_strategy": {
+    "name": "Switch to secondary supplier",
+    "supplier_id": "SUP-207",
+    "execution_days": 5,
+    "residual_risk": "medium"
+  }
 }
 ```
 

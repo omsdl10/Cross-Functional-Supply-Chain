@@ -55,6 +55,8 @@
 - Three mitigation strategies
 - Cost, lead time, and risk scoring
 - Recommended action selection
+- LangGraph monitor-to-impact-to-strategy workflow
+- Strategy API endpoints
 
 ## Stage 8: Human Approval Workflow
 
