@@ -8,13 +8,13 @@ Manufacturing CFOs need AI that creates operational capacity and responsiveness,
 
 ## Current Stage
 
-Stage 5 adds a LangGraph Monitor Agent:
+Stage 6 adds an Impact Assessment Agent:
 
-- Polls mock logistics data
-- Detects delayed and at-risk shipments
-- Emits structured supplier risk events
-- Summarizes affected suppliers and materials
-- Exposes monitor API endpoints
+- Consumes monitor risk events
+- Calls inventory and supplier tools
+- Calculates days of cover versus delay days
+- Classifies production risk
+- Summarizes critical materials at risk
 
 ## Stage 1 Scope
 
@@ -127,6 +127,29 @@ Example monitor output:
     "affected_suppliers": ["SUP-102", "SUP-518"],
     "affected_materials": ["MAT-330", "MAT-445"]
   }
+}
+```
+
+## Impact Assessment Agent
+
+Stage 6 chains monitoring into impact assessment.
+
+Example endpoints:
+
+```txt
+GET http://localhost:8000/impact/events/MON-SHIP-8821
+POST http://localhost:8000/impact/run
+```
+
+Example impact output:
+
+```json
+{
+  "material_id": "MAT-445",
+  "days_of_cover": 4.0,
+  "incoming_delay_days": 7,
+  "projected_stockout_gap_days": 3.0,
+  "production_risk": "high"
 }
 ```
 

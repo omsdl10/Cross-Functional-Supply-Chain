@@ -47,6 +47,8 @@
 - Inventory impact calculation
 - Critical material check
 - Stockout risk scoring
+- LangGraph monitor-to-impact workflow
+- Impact API endpoints
 
 ## Stage 7: Strategy Agent
 
