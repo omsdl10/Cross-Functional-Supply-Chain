@@ -31,6 +31,8 @@
 - Inventory tools
 - Purchase order tools
 - Days-of-cover calculation
+- Alternate supplier lookup
+- Material risk snapshot API
 
 ## Stage 5: Monitor Agent
 

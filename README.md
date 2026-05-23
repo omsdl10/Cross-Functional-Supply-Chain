@@ -8,14 +8,14 @@ Manufacturing CFOs need AI that creates operational capacity and responsiveness,
 
 ## Current Stage
 
-Stage 3 adds retrieval over supplier contracts with ChromaDB:
+Stage 4 adds operational tools that future agents can call:
 
-- Supplier contract text samples
-- Contract chunking
-- Local deterministic embeddings
-- Persistent ChromaDB collection
-- Retrieval API endpoints
-- Retrieval tests
+- Supplier lookup
+- Inventory lookup
+- Days-of-cover calculation
+- Open purchase order lookup
+- Alternate supplier lookup
+- Material risk snapshots
 
 ## Stage 1 Scope
 
@@ -90,6 +90,20 @@ Query contracts:
 
 ```txt
 GET http://localhost:8000/retrieval/contracts/query?q=inventory cover below 5 days
+```
+
+## Operational Tools
+
+Stage 4 exposes the mock operating model through tool functions and API endpoints.
+
+Example endpoints:
+
+```txt
+GET http://localhost:8000/tools/suppliers/SUP-102
+GET http://localhost:8000/tools/materials/MAT-445/inventory
+GET http://localhost:8000/tools/materials/MAT-445/purchase-orders
+GET http://localhost:8000/tools/materials/MAT-445/alternate-suppliers
+GET http://localhost:8000/tools/materials/MAT-445/risk-snapshot
 ```
 
 ## Local Setup
