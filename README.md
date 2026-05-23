@@ -8,14 +8,13 @@ Manufacturing CFOs need AI that creates operational capacity and responsiveness,
 
 ## Current Stage
 
-Stage 4 adds operational tools that future agents can call:
+Stage 5 adds a LangGraph Monitor Agent:
 
-- Supplier lookup
-- Inventory lookup
-- Days-of-cover calculation
-- Open purchase order lookup
-- Alternate supplier lookup
-- Material risk snapshots
+- Polls mock logistics data
+- Detects delayed and at-risk shipments
+- Emits structured supplier risk events
+- Summarizes affected suppliers and materials
+- Exposes monitor API endpoints
 
 ## Stage 1 Scope
 
@@ -104,6 +103,31 @@ GET http://localhost:8000/tools/materials/MAT-445/inventory
 GET http://localhost:8000/tools/materials/MAT-445/purchase-orders
 GET http://localhost:8000/tools/materials/MAT-445/alternate-suppliers
 GET http://localhost:8000/tools/materials/MAT-445/risk-snapshot
+```
+
+## Monitor Agent
+
+Stage 5 uses LangGraph to run the first autonomous workflow node.
+
+Example endpoints:
+
+```txt
+GET http://localhost:8000/monitor/risks
+POST http://localhost:8000/monitor/run
+```
+
+Example monitor output:
+
+```json
+{
+  "summary": {
+    "risk_detected": true,
+    "risk_count": 2,
+    "highest_severity": "high",
+    "affected_suppliers": ["SUP-102", "SUP-518"],
+    "affected_materials": ["MAT-330", "MAT-445"]
+  }
+}
 ```
 
 ## Local Setup

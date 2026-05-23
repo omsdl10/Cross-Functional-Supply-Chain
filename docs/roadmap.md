@@ -39,6 +39,8 @@
 - Mock logistics polling
 - Risk event schema
 - LangGraph monitor node
+- Monitor API endpoints
+- Tests for delayed and at-risk shipments
 
 ## Stage 6: Impact Assessment Agent
 

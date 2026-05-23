@@ -1,10 +1,11 @@
 from fastapi import FastAPI
 
+from app.api.monitor import router as monitor_router
 from app.api.retrieval import router as retrieval_router
 from app.api.tools import router as tools_router
 
 APP_NAME = "cross-functional-supply-chain-concierge"
-APP_STAGE = "stage-4-operational-tools"
+APP_STAGE = "stage-5-monitor-agent"
 
 app = FastAPI(
     title="Cross-Functional Supply Chain Concierge",
@@ -14,6 +15,7 @@ app = FastAPI(
 
 app.include_router(retrieval_router)
 app.include_router(tools_router)
+app.include_router(monitor_router)
 
 
 @app.get("/health", tags=["system"])

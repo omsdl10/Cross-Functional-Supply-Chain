@@ -12,5 +12,5 @@ def test_health_check() -> None:
     assert response.json() == {
         "status": "ok",
         "service": "cross-functional-supply-chain-concierge",
-        "stage": "stage-4-operational-tools",
+        "stage": "stage-5-monitor-agent",
     }
