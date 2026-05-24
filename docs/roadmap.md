@@ -71,6 +71,8 @@
 - Supplier inquiry email draft
 - Purchase order change request draft
 - Execution history
+- Internal production planning alert
+- Approved-strategy guardrail
 
 ## Stage 10: End-to-End Demo
 

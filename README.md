@@ -8,13 +8,13 @@ Manufacturing CFOs need AI that creates operational capacity and responsiveness,
 
 ## Current Stage
 
-Stage 8 adds a human approval workflow:
+Stage 9 adds an Execution Agent:
 
-- Converts strategy recommendations into approval requests
-- Supports approve, reject, and needs-more-info decisions
-- Allows a human to choose a specific mitigation strategy
-- Stores approval decisions for the current runtime
-- Chains monitor, impact, strategy, and approval in LangGraph
+- Requires an approved mitigation strategy
+- Drafts supplier inquiry emails
+- Drafts purchase order change requests
+- Drafts internal production planning alerts
+- Stores execution draft history for the current runtime
 
 ## Stage 1 Scope
 
@@ -200,6 +200,26 @@ Example approval decision body:
   "comment": "Proceed with secondary supplier activation.",
   "decided_by": "ops-lead"
 }
+```
+
+## Execution Agent
+
+Stage 9 drafts operational actions only after human approval.
+
+Example endpoints:
+
+```txt
+POST http://localhost:8000/execution/approval/APR-MON-SHIP-8821/draft
+GET http://localhost:8000/execution/history
+GET http://localhost:8000/execution/history/EXEC-APR-MON-SHIP-8821
+```
+
+Example output includes:
+
+```txt
+Supplier inquiry email
+Purchase order change request
+Internal production planning alert
 ```
 
 ## Local Setup
