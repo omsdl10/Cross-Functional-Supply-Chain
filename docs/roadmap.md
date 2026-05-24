@@ -79,3 +79,5 @@
 - Full risk-to-execution flow
 - Demo scenario
 - README walkthrough
+- Single demo API endpoint
+- Auto-approved sample execution draft

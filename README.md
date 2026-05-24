@@ -8,13 +8,13 @@ Manufacturing CFOs need AI that creates operational capacity and responsiveness,
 
 ## Current Stage
 
-Stage 9 adds an Execution Agent:
+Stage 10 adds an end-to-end demo:
 
-- Requires an approved mitigation strategy
-- Drafts supplier inquiry emails
-- Drafts purchase order change requests
-- Drafts internal production planning alerts
-- Stores execution draft history for the current runtime
+- Runs monitor, impact, strategy, approval, and execution together
+- Uses the `MON-SHIP-8821` lithium battery delay scenario
+- Auto-approves the recommended strategy for demo purposes
+- Produces supplier email, PO change, and internal alert drafts
+- Provides a single demo API endpoint
 
 ## Stage 1 Scope
 
@@ -220,6 +220,24 @@ Example output includes:
 Supplier inquiry email
 Purchase order change request
 Internal production planning alert
+```
+
+## End-To-End Demo
+
+Stage 10 demonstrates the full operational loop.
+
+```txt
+POST http://localhost:8000/demo/run
+```
+
+The default demo scenario:
+
+```txt
+Shipment SHIP-8821 is delayed by 7 days.
+MAT-445 has 4 days of cover.
+The system recommends switching to SUP-207.
+The demo auto-approves that strategy.
+Execution drafts are generated.
 ```
 
 ## Local Setup

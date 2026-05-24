@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 
 from app.api.approval import router as approval_router
+from app.api.demo import router as demo_router
 from app.api.execution import router as execution_router
 from app.api.impact import router as impact_router
 from app.api.monitor import router as monitor_router
@@ -9,7 +10,7 @@ from app.api.strategy import router as strategy_router
 from app.api.tools import router as tools_router
 
 APP_NAME = "cross-functional-supply-chain-concierge"
-APP_STAGE = "stage-9-execution-agent"
+APP_STAGE = "stage-10-end-to-end-demo"
 
 app = FastAPI(
     title="Cross-Functional Supply Chain Concierge",
@@ -24,6 +25,7 @@ app.include_router(impact_router)
 app.include_router(strategy_router)
 app.include_router(approval_router)
 app.include_router(execution_router)
+app.include_router(demo_router)
 
 
 @app.get("/health", tags=["system"])
