@@ -63,6 +63,8 @@
 - Approval checkpoint
 - API endpoint for approval decisions
 - Approval queue foundation
+- Strategy selection during approval
+- LangGraph monitor-to-impact-to-strategy-to-approval workflow
 
 ## Stage 9: Execution Agent
 

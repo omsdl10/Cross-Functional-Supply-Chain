@@ -8,13 +8,13 @@ Manufacturing CFOs need AI that creates operational capacity and responsiveness,
 
 ## Current Stage
 
-Stage 7 adds a Strategy Agent:
+Stage 8 adds a human approval workflow:
 
-- Consumes impact assessments
-- Generates mitigation options
-- Scores cost, lead time, and residual risk
-- Recommends the best strategy
-- Chains monitor, impact, and strategy in LangGraph
+- Converts strategy recommendations into approval requests
+- Supports approve, reject, and needs-more-info decisions
+- Allows a human to choose a specific mitigation strategy
+- Stores approval decisions for the current runtime
+- Chains monitor, impact, strategy, and approval in LangGraph
 
 ## Stage 1 Scope
 
@@ -175,6 +175,30 @@ Example strategy output:
     "execution_days": 5,
     "residual_risk": "medium"
   }
+}
+```
+
+## Human Approval
+
+Stage 8 adds the safety checkpoint before execution.
+
+Example endpoints:
+
+```txt
+POST http://localhost:8000/approval/queue
+GET http://localhost:8000/approval/queue
+GET http://localhost:8000/approval/queue/APR-MON-SHIP-8821
+POST http://localhost:8000/approval/queue/APR-MON-SHIP-8821/decision
+```
+
+Example approval decision body:
+
+```json
+{
+  "decision": "approved",
+  "selected_strategy_id": "switch-supplier-SUP-207",
+  "comment": "Proceed with secondary supplier activation.",
+  "decided_by": "ops-lead"
 }
 ```
 
